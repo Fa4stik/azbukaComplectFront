@@ -3,8 +3,7 @@ import logogreen from '../assets/img/MacBook Pro 16_ - 2 1 1.svg'
 import tg from '../assets/img/icons/tg-bezh.png'
 import vk from '../assets/img/icons/vk-bezh.png'
 import wa from '../assets/img/icons/wa-bezh.png'
-import {useNavigate} from "react-router-dom";
-import { HashLink as Link } from 'react-router-hash-link';
+import {Link, useNavigate} from "react-router-dom";
 
 
 

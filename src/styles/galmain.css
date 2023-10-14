@@ -23,15 +23,14 @@ body {
   }
   
   .horizontal-scroll-wrapper {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vh;
     transform: rotate(-90deg) translate3d(0,-100vh,0);
     transform-origin: right top;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 0;
+    overflow: hidden;
     height: 100vw;
     perspective: 1px;
       transform-style: preserve-3d;
@@ -115,17 +114,27 @@ body {
     vertical-align: top;
     filter: saturate(40%) sepia(30%) hue-rotate(5deg);
   }
+
   a:hover .img-gm {
     filter: none;
   }
+
   p {
     margin: 0;
   }
+
   .scroll-info {
     display: flex;
     align-items: center;
   }
+
   .icon svg {
       width: 50px;
       fill: currentcolor;
+  }
+
+  .gmain {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
