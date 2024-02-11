@@ -27,29 +27,29 @@ const Partners = () => {
 
     
     <section id="about">
-        <div class="container">
-            <div class="row">
+        <div className="container">
+            <div className="row">
             <h2 className="h2 margin-btm-100px">У НАС ЗАКАЗЫВАЮТ</h2>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
+            <div className="row">
+                <div className="col-lg-12">
+                    <ul className="timeline">
                         <li>
-                            <div class="timeline-panel">
+                            <div className="timeline-panel">
                             <div className="logo-partners-item">
                                  <img className="logo-partners-img" src={part1}  alt="partners-logo"/>
                             </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-panel">
+                        <li className="timeline-inverted">
+                            <div className="timeline-panel">
                             <div className="logo-partners-item">
                                <img className="logo-partners-img" src={part2} style={{height:'350px'}} alt="partners-logo"/>
                             </div>
                             </div>
                         </li>
                         <li>
-                            <div class="timeline-panel">
+                            <div className="timeline-panel">
                             <div className="logo-partners-item">
                                  <img className="logo-partners-img" src={part3} alt="partners-logo"/>
                             </div>

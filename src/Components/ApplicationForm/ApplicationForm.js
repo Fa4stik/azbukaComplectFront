@@ -6,7 +6,7 @@ const ApplicationForm = () => {
     const [contactFF, setContactFF] = useState('')
     const [nameFF, setNameFF] = useState('')
     const [projectFF, setProjectFF] = useState('')
-    const [fileFF, setFileFF] = useState('')
+    const [fileFF, setFileFF] = useState([])
 
     const handleTellFF = (e) => {
         setTelFF(e.target.value)
@@ -24,14 +24,20 @@ const ApplicationForm = () => {
         setProjectFF(e.target.value)
     };
 
-    const handleBtnMain = async (e) => {
+    const handleBtnMain = (e) => {
         e.preventDefault()
         const fileData = new FormData()
+        fileFF && Array.from(fileFF).forEach(file => {
+            fileData.append('files', file)
+        })
         fileData.append('telFF', telFF)
         fileData.append('contactFF', contactFF)
         fileData.append('nameFF', nameFF)
         fileData.append('projectFF', projectFF)
-        const resp = await $api.post('/sendMail', fileData)
+        $api.post('/sendMail', fileData)
+            .then((resp) => {
+                console.log(resp)
+            })
     };
 
     const handleLoadFile = (e) => {
@@ -55,13 +61,14 @@ const ApplicationForm = () => {
                     <input id="fileFF" className="input__file" name="fileFF"
                            type="file" multiple onChange={handleLoadFile}/>
 
-                    <label htmlFor="fileFF" className="btn-main"
-                           class="btm-form input__file-button btn-main">
-                        <span className="input__file-button-text">Загрузить файл</span>
+                    <label htmlFor="fileFF" className="btm-form input__file-button btn-main">
+                        <span className="input__file-button-text">Загрузить файл
+                            {fileFF.length > 0 && `(${fileFF.length})`}</span>
                     </label>
                 </div>
 
-                <button className="btn-main" class="btm-form input__file-button btn-main" type="submit" id="submitFF" onClick={handleBtnMain}>
+                <button className="btn-main btm-form input__file-button"
+                        type="submit" id="submitFF" onClick={handleBtnMain}>
                     Оставить заявку
                 </button>
             </div>

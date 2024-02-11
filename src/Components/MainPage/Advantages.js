@@ -8,7 +8,7 @@ const Advantages = () => {
     return (
       
     <section id="advantages" className="advantages">
-        <ul class="tilesWrap">
+        <ul className="tilesWrap">
 	<li>
 		<h2>01</h2>
 		<h3>Готовые решения</h3>
