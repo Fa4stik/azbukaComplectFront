@@ -1,6 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
 import { $api } from '../../api'
 import "../../styles/style.css"
+import {enqueueSnackbar} from "notistack";
+import '../MainPage/MainPageAdaptive.css'
 
 const ApplicationForm = () => {
     const [telFF, setTelFF] = useState('')
@@ -27,6 +29,9 @@ const ApplicationForm = () => {
 
     const handleBtnMain = (e) => {
         e.preventDefault()
+        enqueueSnackbar('Ваше сообщение было успешно отправлено! Мы скоро свяжемся с вами', {
+            variant: 'success',
+        })
         const fileData = new FormData()
         fileFF && Array.from(fileFF).forEach(file => {
             fileData.append('files', file)
@@ -37,7 +42,12 @@ const ApplicationForm = () => {
         fileData.append('projectFF', projectFF)
         $api.post('/sendMail', fileData)
             .then((resp) => {
-                console.log(resp)
+                console.log('success')
+                setTelFF('')
+                setContactFF('')
+                setNameFF('')
+                setProjectFF('')
+                setFileFF([])
             })
     };
 

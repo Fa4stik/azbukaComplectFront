@@ -49,6 +49,10 @@
     .footer__container {
         padding: 5vw !important;
     }
+
+    #notistack-snackbar {
+        font-size: 1.2vw;
+    }
 }
 
 @media screen and (min-width: 1600px) {
@@ -104,5 +108,21 @@
 
     .footer__container {
         padding: 7vw 0 !important;
+    }
+
+    .center-photo {
+        max-width: 70vw !important;
+    }
+
+    .footer__li__header {
+        font-size: 5vw !important;
+    }
+
+    .footer__li__text {
+        font-size: 4vw !important;;
+    }
+
+    #notistack-snackbar {
+        font-size: 3vw;
     }
 }

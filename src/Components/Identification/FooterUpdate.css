@@ -34,7 +34,7 @@
 
 .footer__li__header {
     color: var(--li-text-color);
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: 900;
     line-height: 1.1em;
     user-select: none;
@@ -43,6 +43,7 @@
 .footer__li__text {
     color: var(--li-text-color);
     user-select: none;
+    font-size: 1.2vw
 }
 
 .footer__logo {

@@ -21,9 +21,18 @@
 }
 
 @media screen and (min-width: 1600px) {
+    .btn-apply {
+        font-size: 1vw !important;
+    }
+
+    .job-title,
+    .company {
+        font-size: 1.5vw !important;
+    }
+
     .content {
         width: 100% !important;
-        padding: 0 35vw !important;
+        padding: 0 40vw !important;
     }
 }
 

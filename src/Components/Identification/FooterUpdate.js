@@ -47,8 +47,8 @@ const FooterUpdate = () => {
                 <ul className="footer__ul">
                     <li className="footer__li__header">Навигация</li>
                     {guids.map(({name, urlPath}) => (
-                        <li key={name} className="footer__li__text">
-                            <Link to={urlPath}>
+                        <li key={name}>
+                            <Link to={urlPath} className="footer__li__text">
                                 {name}
                             </Link>
                         </li>
@@ -59,8 +59,8 @@ const FooterUpdate = () => {
                 <ul className="footer__ul">
                     <li className="footer__li__header">Адрес</li>
                     {addresses.map(({name, geo}) => (
-                        <li key={name} className="footer__li__text">
-                            <a href={geo} target="_blank">
+                        <li key={name}>
+                            <a href={geo} target="_blank" className="footer__li__text">
                                 {name}
                             </a>
                         </li>
@@ -69,8 +69,8 @@ const FooterUpdate = () => {
                 <ul className="footer__ul">
                     <li className="footer__li__header">Часы работы</li>
                     {schedules.map(({name}) => (
-                        <li key={name} className="footer__li__text">
-                            <a href="">
+                        <li key={name}>
+                            <a href="" className="footer__li__text">
                                 {name}
                             </a>
                         </li>
@@ -89,8 +89,10 @@ const FooterUpdate = () => {
                         ))}
                     </li>
                     {contacts.texts.map(({name, urlPath}) => (
-                        <li key={name} className="footer__li__text">
-                            <a href={urlPath}>{name}</a>
+                        <li key={name}>
+                            <a href={urlPath} className="footer__li__text">
+                                {name}
+                            </a>
                         </li>
                     ))}
                 </ul>
