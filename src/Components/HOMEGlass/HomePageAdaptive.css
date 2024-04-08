@@ -20,6 +20,13 @@
     }
 }
 
+@media screen and (min-width: 1600px) {
+    .content {
+        width: 100% !important;
+        padding: 0 35vw !important;
+    }
+}
+
 @media screen and (max-width: 432px) {
     .content {
         padding: 2vw 2vw;

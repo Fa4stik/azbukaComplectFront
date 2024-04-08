@@ -6,6 +6,7 @@ import GalleryMain from "./Components/MainPage/GalleryMain";
 import NavigationOnPage from "./Components/MainPage/NavigationOnPage";
 import Footer from "./Components/Identification/Footer";
 import Partners from "./Components/MainPage/Partners";
+import FooterUpdate from "./Components/Identification/FooterUpdate";
 
 function App() {
     return (
@@ -16,7 +17,7 @@ function App() {
             <GalleryMain/>
             <Partners/>
             <Application/>
-            <Footer/>
+            <FooterUpdate/>
         </div>
     );
 }

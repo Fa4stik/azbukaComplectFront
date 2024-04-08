@@ -4,7 +4,6 @@ import GalleryMain from "./GalleryMain";
 import NavigationOnPage from "./NavigationOnPage";
 import Partners from "./Partners";
 import Application from "../ApplicationForm/Application";
-import Footer from "../Identification/Footer";
 import FooterUpdate from "../Identification/FooterUpdate";
 import {useLocation} from "react-router-dom";
 import {useEffect} from "react";
@@ -30,7 +29,6 @@ function StartPage() {
             <GalleryMain/>
             <Partners/>
             <Application/>
-            {/*<Footer/>*/}
             <FooterUpdate/>
         </div>
     );

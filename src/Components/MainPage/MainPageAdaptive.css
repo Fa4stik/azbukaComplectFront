@@ -51,6 +51,20 @@
     }
 }
 
+@media screen and (min-width: 1600px) {
+    .content__logo {
+        width: 18vw !important;
+    }
+
+    .h2 {
+        font-size: 3vw !important;
+    }
+
+    .footer__li__current__img {
+        width: 2vw;
+    }
+}
+
 @media screen and (max-width: 432px) {
     :root {
         --block-margin-bottom: 2vw;

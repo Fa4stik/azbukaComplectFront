@@ -245,7 +245,7 @@ input {
 .btm-form:focus,
 .btm-form:hover {
   background-color: var(--green);
-  color: var(--brown);
+  /*color: var(--brown);*/
 }
 
 ::-moz-placeholder {
