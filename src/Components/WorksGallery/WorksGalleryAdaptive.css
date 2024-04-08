@@ -1,0 +1,15 @@
+@media screen and (min-width: 1200px) {
+    .ul-gal {
+        width: 100vw !important;
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .li-gal {
+        width: 45vw;
+    }
+
+    .ul-gal figcaption {
+        font-size: 6vw;
+    }
+}

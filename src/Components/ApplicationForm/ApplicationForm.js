@@ -1,5 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import { $api } from '../../api'
+import "../../styles/style.css"
 
 const ApplicationForm = () => {
     const [telFF, setTelFF] = useState('')
@@ -54,19 +55,15 @@ const ApplicationForm = () => {
                    placeholder="Имя" onChange={handleNameFF}/>
             <input id="projectFF" name="projectFF" className="form-input" type="text"
                    placeholder="Товар" onChange={handleProjectFF}/>
-
             <div className="bottom-form-wrapper">
                 <div className="control-file">
-
-                    <input id="fileFF" className="input__file" name="fileFF"
+                    <input id="fileFF" className="input__file" name="fileFF" accept="image/*"
                            type="file" multiple onChange={handleLoadFile}/>
-
                     <label htmlFor="fileFF" className="btm-form input__file-button btn-main">
                         <span className="input__file-button-text">Загрузить файл
-                            {fileFF.length > 0 && `(${fileFF.length})`}</span>
+                            {fileFF.length > 0 && ` (${fileFF.length})`}</span>
                     </label>
                 </div>
-
                 <button className="btn-main btm-form input__file-button"
                         type="submit" id="submitFF" onClick={handleBtnMain}>
                     Оставить заявку

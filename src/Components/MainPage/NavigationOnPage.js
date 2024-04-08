@@ -1,18 +1,24 @@
 import React from 'react';
+import {useNavigate} from "react-router-dom";
 
 const NavigationOnPage = () => {
-    return (
+    const navigation = useNavigate()
 
-<div className="bottom-form-wrapper">
-    <a id="register" className="btn-main" href="HOMEGlass/HomeGlass.js">
-        <i className="fa fa-user-plus"></i>
-        <span>Стекло для дома</span>
-    </a>
-    <a id="forhome" className="btn-main" href="BSNGlass/BsnGlass.js">
-        <i className="fa fa-user-plus"></i>
-        <span>Профессиональное остекление для бизнеса</span>
-    </a>
-</div>
+    return (
+        <div className="bottom-form-wrapper">
+            <a id="register" className="btn-main" target="_blank"
+               onClick={() => navigation('/glass/home')}
+            >
+                <i className="fa fa-user-plus"></i>
+                <span>Стекло для дома</span>
+            </a>
+            <a id="forhome" className="btn-main" target="_blank"
+               onClick={() => navigation('/glass/business')}
+            >
+                <i className="fa fa-user-plus"></i>
+                <span>Профессиональное остекление для бизнеса</span>
+            </a>
+        </div>
     );
 };
 

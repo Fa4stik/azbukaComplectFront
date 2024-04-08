@@ -1,0 +1,94 @@
+@media screen and (min-width: 1200px) {
+    .content {
+        width: 30vw !important;
+    }
+
+    .h2 {
+        font-size: 5vw !important;
+    }
+
+    .btn-main {
+        font-size: 2vw !important;
+    }
+
+    .bottom-form-wrapper {
+        row-gap: 1.5vw !important;
+    }
+
+    .apl-border {
+        padding: 5vw 10vw !important;
+    }
+
+    .h2-form {
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    .form input {
+        font-size: 2vw;
+    }
+
+    .form input::placeholder {
+        font-size: 2vw;
+    }
+
+    .control-file {
+        margin: 0 !important;
+    }
+
+    .bottom-form-wrapper {
+        margin-top: 1vw;
+        flex-direction: row !important;
+        align-items: center;
+    }
+
+    .btm-form {
+        font-size: 1.5vw !important;
+    }
+
+    .footer__container {
+        padding: 5vw !important;
+    }
+}
+
+@media screen and (max-width: 432px) {
+    :root {
+        --block-margin-bottom: 2vw;
+    }
+
+    .hero,
+    .advantages,
+    .bottom-form-wrapper,
+    .application,
+    .gmain {
+        margin-bottom: 0;
+    }
+
+    .h2 {
+        font-size: 10vw !important;
+    }
+
+    .bottom-form-wrapper {
+        row-gap: 3vw;
+    }
+
+    .apl-border {
+        padding: 5vw 9vw;
+        margin: 4%;
+        border-radius: 10%;
+    }
+
+    .h2-form {
+        color: var(--dark-green);
+        text-align: center;
+        font-size: 7vw;
+    }
+
+    .application {
+        margin-top: 20vw;
+    }
+
+    .footer__container {
+        padding: 7vw 0 !important;
+    }
+}

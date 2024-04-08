@@ -554,7 +554,7 @@ input {
 
 .bottom-form-wrapper {
   display: flex;
-  gap: 30px;
+  gap: 3vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -757,9 +757,9 @@ display: none;
 }
 
 .center-photo {
-  max-width: 100%;
-  height: auto;
-  min-width: 600px;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -831,7 +831,6 @@ display: none;
   font-size: 0.875rem;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #FFF1BE;
   background-color: transparent;
   color: #1a5623;
   border: 2px solid #1a5623;
@@ -845,6 +844,7 @@ justify-content: center;
   /*margin: 2% 0 0 27%;*/
 }
 .btn-main:hover {
+  user-select: none;
   background-color: #1a5623;
   color: #E0D8CF;;
   border: 2px solid #1a5623;
@@ -879,11 +879,11 @@ justify-content: center;
 }
 
 .bg {
-  animation:slide 3s ease-in-out infinite alternate;
+  animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-20deg, #E0D8CF 50%, #1A5623 50%);
   bottom:0;
   left:-100%;
-  opacity:.5;
+  opacity:0.5;
   position:fixed;
   right:-50%;
   top:0;
@@ -902,16 +902,21 @@ justify-content: center;
 .content {
 
   /* background-color: rgba(255,255,255,.8); */
+  width: 70vw;
   border-radius: 0.25em;
   /* box-shadow: 0 0 0.25em rgba(0,0,0,.25); */
   box-sizing: border-box;
   left: 50%;
-  padding: 4vmax 0vmax;
+  padding: 5vh 5vw;
   /* position: fixed; */
   text-align: center;
   top: 50%;
   /*transform: translate(-50%, -50%);*/
   
+}
+
+.content__logo {
+  width: 30vw !important;
 }
 
 h1 {
@@ -1112,6 +1117,9 @@ div.container-footer.w-container {
   padding-bottom: 40px;
   padding-top: 70px;
   background-color: #1A5623;
+  max-width: 100vw;
+  position: relative;
+  overflow: hidden;
 }
 
 div.container-footer.w-container:after {
@@ -1267,6 +1275,7 @@ h3.footer-titles {
   margin-bottom: 0;
   margin-left: 0;
   margin-top: 24px;
+  user-select: none;
 }
 
 p.footer-links {
@@ -1300,6 +1309,7 @@ a:active {
 a:hover {
   outline: 0;
   color: #19291F;
+  cursor: pointer;
 }
 
 span.footer-link {
@@ -1395,8 +1405,10 @@ strong.link-email-footer {
 
 
 .apl-border{
+  overflow: hidden;
   background-repeat: no-repeat;
   border-radius: 15%;
-  margin: 8% 8% 8% 8%;
+  margin: 8%;
   background-color: #E0D8CF;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }

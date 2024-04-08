@@ -1,0 +1,41 @@
+@media screen and (min-width: 1200px) {
+    .btn-apply {
+        font-size: 1.5vw;
+        margin: 0 5vw;
+        padding: 0.5vw 0;
+    }
+
+    .content {
+        width: 100% !important;
+        padding: 0 25vw !important;
+    }
+
+    .content__header {
+        padding: 5vw 0 !important;
+    }
+
+    .job-title,
+    .company {
+        font-size: 2vw !important;
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .content {
+        padding: 2vw 2vw;
+    }
+
+    .content__logo {
+        width: 60vw !important;
+        padding: 5vw 2vw;
+    }
+
+    .job-title,
+    .company {
+        font-size: 5vw !important;
+    }
+
+    .content__header {
+        padding: 10vw 0 !important;
+    }
+}
